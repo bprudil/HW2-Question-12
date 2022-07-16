@@ -4,13 +4,14 @@
 
 ## Tidy data
 
-# Values in column names 
+# Values in column names
+# Annotating this code
 
-raw <- read.csv("data/pew.csv", check.names = F)
+raw <- read.csv("data/pew.csv", check.names = F) #Test 1
 
-head(raw)
+head(raw) #Test 2
 
-library(reshape2)
+library(reshape2) #Test 3
 tidy <- melt(raw, id = "religion")
 
 head(raw)
